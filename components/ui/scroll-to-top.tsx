@@ -21,7 +21,7 @@ export function ScrollToTop() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
       }}
       data-visible={IsVisible}
-      className="fixed bottom-10 right-10 z-50 hidden rounded-full bg-white p-2 hover:bg-gray-400 data-[visible=true]:block"
+      className="fixed bottom-10 right-10 z-50 hidden rounded-full bg-white p-2 hover:bg-gray-400 data-[visible=true]:block lg:bottom-5 lg:right-5"
     >
       <BiUpArrowAlt size={30} color="black" />
     </button>

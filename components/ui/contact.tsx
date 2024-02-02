@@ -59,7 +59,7 @@ export function Contact() {
     <div id="contact" className="w-full py-20">
       <Toaster />
       <SectionText>Contato</SectionText>
-      <div className="flex gap-16">
+      <div className=" flex flex-wrap gap-16">
         <div className="w-full max-w-[31.25rem]">
           <form
             onSubmit={handleSubmit(sendEmail)}
@@ -103,7 +103,7 @@ export function Contact() {
             </div>
             <Button
               type="submit"
-              className="gap-4 rounded-md border border-gray-500 bg-zinc-900 py-7 font-semibold text-white hover:bg-zinc-950"
+              className="gap-4 rounded-md border border-gray-500 bg-zinc-900 py-7 font-poppins font-semibold text-white hover:bg-zinc-950"
             >
               {isLoading ? (
                 <SpinnerLoading />
@@ -121,7 +121,9 @@ export function Contact() {
             <span className="font-poppins text-lg font-semibold text-white">
               Email
             </span>
-            <span className="text-gray-300">mateusgustavodev@gmail.com</span>
+            <span className="font-poppins text-gray-300">
+              mateusgustavodev@gmail.com
+            </span>
           </div>
           <div className="flex flex-col gap-2">
             <span className="font-poppins text-lg font-semibold text-white">

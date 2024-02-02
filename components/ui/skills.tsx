@@ -5,7 +5,7 @@ export function Skills() {
   return (
     <div className="w-full py-20">
       <SectionText>Principais skills</SectionText>
-      <div className="m-auto flex flex-wrap  gap-10">
+      <div className="max-sm:gap-5 m-auto flex flex-wrap gap-8 1xl:justify-center">
         <SkillCard
           image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           name="Html"

@@ -1,14 +1,18 @@
 'use client'
 import { Link } from 'react-scroll'
+import { MenuMobile } from './menu-mobile'
 
 export function Header() {
   return (
-    <div className=" flex w-full justify-center border-b border-zinc-700  bg-base py-7">
-      <div className="flex w-full max-w-[67.5rem] justify-between">
+    <div className="max-sm:py-4 flex w-full justify-center border-b border-zinc-700 bg-base py-7">
+      <div className="flex w-full max-w-[72.5rem] items-center justify-between px-6">
         <span className="font-poppins text-white">
           {'<'}MateusDev /{'>'}
         </span>
-        <div className="flex gap-8">
+        <div className="hidden lg:block">
+          <MenuMobile />
+        </div>
+        <div className="flex gap-8 lg:hidden">
           <Link
             to="contact"
             smooth={true}

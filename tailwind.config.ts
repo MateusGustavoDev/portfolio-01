@@ -39,6 +39,25 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      screens: {
+        '2xl': { max: '1535px' },
+        // => @media (max-width: 1535px) { ... }
+
+        '1xl': { max: '1120px' },
+        // => @media (max-width: 1px)
+
+        xl: { max: '1279px' },
+        // => @media (max-width: 1279px) { ... }
+
+        lg: { max: '1023px' },
+        // => @media (max-width: 1023px) { ... }
+
+        md: { max: '767px' },
+        // => @media (max-width: 767px) { ... }
+
+        'max-sm': { max: '639px' },
+        // => @media (max-width: 639px) { ... }
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
