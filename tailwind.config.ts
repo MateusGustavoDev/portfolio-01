@@ -49,10 +49,16 @@ const config = {
         xl: { max: '1279px' },
         // => @media (max-width: 1279px) { ... }
 
-        lg: { max: '1023px' },
+        'max-xs': { max: '444px' },
+
+        'max-x1': { max: '1090px' },
+
+        'max-x2': { max: '1120px' },
+
+        'max-lg': { max: '1023px' },
         // => @media (max-width: 1023px) { ... }
 
-        md: { max: '767px' },
+        'max-md': { max: '767px' },
         // => @media (max-width: 767px) { ... }
 
         'max-sm': { max: '639px' },

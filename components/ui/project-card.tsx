@@ -12,11 +12,11 @@ interface ProjectCardProps {
 
 export function ProjectCard() {
   return (
-    <div className="max-sm:w-[25rem] w-[31.25rem]">
+    <div className="max-x2:w-[25rem] w-[31.25rem]">
       <div className="aspect-[510/338] bg-slate-500"></div>
-      <div className="mt-6 flex flex-col gap-4">
+      <div className="max-x1:mt-4 mt-6 flex flex-col gap-4">
         <div className="flex items-center justify-between">
-          <span className="font-poppins text-2xl font-semibold text-white">
+          <span className="max-x1:text:xl font-poppins  text-2xl font-semibold text-white">
             Project name
           </span>
           <div className="flex items-center">
@@ -28,11 +28,11 @@ export function ProjectCard() {
             </Button>
           </div>
         </div>
-        <span className="font-poppins text-gray-300">
+        <span className="max-x1:text-sm font-poppins text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident,
           aliquam a cumque reiciendis fuga quisquam.
         </span>
-        <span className="font-poppins lowercase text-blue-500">
+        <span className="max-x1:text-sm font-poppins lowercase text-blue-500">
           React - Next - Tailwindcss - react-query
         </span>
       </div>

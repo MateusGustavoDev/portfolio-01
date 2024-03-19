@@ -59,8 +59,8 @@ export function Contact() {
     <div id="contact" className="w-full py-20">
       <Toaster />
       <SectionText>Contato</SectionText>
-      <div className=" flex flex-wrap gap-16">
-        <div className="w-full max-w-[31.25rem]">
+      <div className="flex gap-16 max-md:flex-col">
+        <div className="w-full max-w-[31.25rem] max-md:m-auto">
           <form
             onSubmit={handleSubmit(sendEmail)}
             className="flex flex-col gap-6"
@@ -116,16 +116,16 @@ export function Contact() {
             </Button>
           </form>
         </div>
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-6 max-md:m-auto">
+          <div className="flex flex-col gap-2 max-md:items-center">
             <span className="font-poppins text-lg font-semibold text-white">
-              Email
+              Email para contato
             </span>
             <span className="font-poppins text-gray-300">
               mateusgustavodev@gmail.com
             </span>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 max-md:items-center">
             <span className="font-poppins text-lg font-semibold text-white">
               Telefone
             </span>

@@ -5,7 +5,7 @@ export function Skills() {
   return (
     <div className="w-full py-20">
       <SectionText>Principais skills</SectionText>
-      <div className="max-sm:gap-5 m-auto flex flex-wrap gap-8 1xl:justify-center">
+      <div className="max-xs:h-[410px] max-xs:overflow-auto m-auto flex flex-wrap gap-8 1xl:justify-center max-sm:gap-5 [&::-webkit-scrollbar]:hidden">
         <SkillCard
           image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           name="Html"
@@ -31,7 +31,7 @@ export function Skills() {
           name="Next"
         />
         <SkillCard
-          image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+          image="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
           name="Tailwind"
         />
         <SkillCard

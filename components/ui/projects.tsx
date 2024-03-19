@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div id="projects" className="py-20">
       <SectionText>Meus projetos</SectionText>
-      <div className="1xl:justify-center flex flex-wrap gap-14">
+      <div className="max-x1:gap-8 flex flex-wrap gap-14 1xl:justify-center">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
