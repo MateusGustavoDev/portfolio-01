@@ -5,5 +5,9 @@ interface SectionTextProps {
 }
 
 export function SectionText({ children }: SectionTextProps) {
-  return <h2 className="mb-12 font-poppins text-3xl text-white">{children}</h2>
+  return (
+    <h2 className="mb-12 font-poppins text-3xl text-white max-md:mb-8">
+      {children}
+    </h2>
+  )
 }

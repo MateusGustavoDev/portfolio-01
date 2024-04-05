@@ -19,24 +19,24 @@ export function Header() {
         <div className="hidden max-lg:block">
           <MenuMobile />
         </div>
-        <div className="flex gap-8 max-lg:hidden">
+        <div className="flex gap-10 max-lg:hidden">
           <Link
             to="contact"
             smooth={true}
-            className="cursor-pointer font-poppins text-white hover:text-gray-400"
+            className="cursor-pointer font-poppins text-white transition duration-300 hover:text-[#33D2FF]"
           >
             Contato
           </Link>
           <Link
             to="projects"
             smooth={true}
-            className="cursor-pointer font-poppins text-white hover:text-gray-400"
+            className="cursor-pointer font-poppins text-white transition duration-300 hover:text-[#33D2FF]"
           >
             Projetos
           </Link>
           <Link
             to="projects"
-            className="cursor-pointer font-poppins text-white hover:text-gray-400"
+            className="cursor-pointer font-poppins text-white transition duration-300 hover:text-[#33D2FF]"
           >
             Currículo
           </Link>

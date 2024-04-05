@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 export function MenuMobile() {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger asChild>
         <Button>
           <AlignJustify color="white" />
         </Button>

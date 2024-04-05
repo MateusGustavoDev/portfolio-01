@@ -56,7 +56,7 @@ export function Contact() {
   }
 
   return (
-    <div id="contact" className="w-full py-20">
+    <div id="contact" className="w-full py-20 max-md:py-10">
       <Toaster />
       <SectionText>Contato</SectionText>
       <div className="flex gap-16 max-md:flex-col">
@@ -67,7 +67,7 @@ export function Contact() {
           >
             <div className="flex flex-col gap-3">
               <input
-                className="w-full rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-gray-200"
+                className="w-full rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-[#33D2FF]"
                 placeholder="Seu nome"
                 {...register('name')}
               />
@@ -80,7 +80,7 @@ export function Contact() {
             <div className="flex flex-col gap-3">
               <input
                 placeholder="Seu email"
-                className="w-full rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-gray-200"
+                className="w-full rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-[#33D2FF]"
                 {...register('email')}
               />
               {errors.email ? (
@@ -92,7 +92,7 @@ export function Contact() {
             <div className="flex flex-col gap-3">
               <textarea
                 placeholder="Mensagem"
-                className="h-[11.25rem] rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-gray-200"
+                className="h-[11.25rem] rounded-md border border-gray-500 bg-base px-4 py-4 font-poppins text-gray-100 outline-none hover:border-gray-400 focus:border-[#33D2FF]"
                 {...register('message')}
               />
               {errors.message ? (
