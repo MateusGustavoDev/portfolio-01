@@ -34,12 +34,12 @@ export function Header() {
           >
             Projetos
           </Link>
-          <Link
-            to="projects"
+          <a
+            href="/Mateus_Gustavo.pdf"
             className="cursor-pointer font-poppins text-white transition duration-300 hover:text-[#33D2FF]"
           >
             Currículo
-          </Link>
+          </a>
         </div>
       </div>
     </div>

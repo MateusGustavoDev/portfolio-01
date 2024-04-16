@@ -32,12 +32,12 @@ export function MenuMobile() {
           </Link>
         </SheetClose>
         <SheetClose asChild>
-          <Link
-            to="projects"
+          <a
+            href="/Mateus_Gustavo.pdf"
             className="cursor-pointer font-poppins text-2xl text-white hover:text-gray-400"
           >
             Currículo
-          </Link>
+          </a>
         </SheetClose>
       </SheetContent>
     </Sheet>
