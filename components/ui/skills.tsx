@@ -6,7 +6,7 @@ import styledcomponents from '@/public/skills/styledcomponents.svg'
 export function Skills() {
   return (
     <div className="w-full py-20 max-md:py-10">
-      <SectionText>Principais skills</SectionText>
+      <SectionText>Principais habilidades</SectionText>
       <div className="m-auto flex flex-wrap gap-8 1xl:justify-center max-xs:h-[410px] max-xs:overflow-auto max-sm:gap-5 [&::-webkit-scrollbar]:hidden">
         <SkillCard
           image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
