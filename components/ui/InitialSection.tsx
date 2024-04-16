@@ -38,7 +38,7 @@ export function InitialSection() {
             LINKEDIN
           </button>
         </Link>
-        <Link href="https://github.com/MateusGustavo22">
+        <Link href="https://github.com/MateusGustavoDev">
           <button className="flex w-[16rem] items-center justify-center gap-2 rounded-md border border-gray-500 bg-zinc-900 py-4 font-poppins font-semibold text-white transition duration-300 ease-in-out hover:bg-zinc-950 max-sm:w-full">
             <BsGithub size={20} />
             GITHUB
