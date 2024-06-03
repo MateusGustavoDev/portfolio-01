@@ -64,6 +64,9 @@ const config = {
         'max-sm': { max: '639px' },
         // => @media (max-width: 639px) { ... }
       },
+      maxWidth: {
+        wrapper: '75rem',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

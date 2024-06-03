@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { BiUpArrowAlt } from 'react-icons/bi'
 
@@ -16,14 +17,12 @@ export function ScrollToTop() {
   }, [])
 
   return (
-    <button
-      onClick={() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-      }}
+    <Link
+      href="#top"
       data-visible={IsVisible}
-      className="fixed bottom-8 right-5 z-50 hidden rounded-full bg-white p-2 hover:bg-gray-400 data-[visible=true]:block lg:bottom-8 lg:right-8"
+      className="group fixed bottom-8 right-5 z-50  hidden rounded-full bg-white p-2 transition duration-300 ease-in-out hover:bg-blue-500 data-[visible=true]:block lg:bottom-8 lg:right-8"
     >
-      <BiUpArrowAlt size={30} color="black" />
-    </button>
+      <BiUpArrowAlt size={30} className="text-black group-hover:text-white" />
+    </Link>
   )
 }

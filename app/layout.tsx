@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Poppins, Inter } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/ui/header'
+import { Header } from '@/components/header'
+import { ScreenWidthProvider } from '@/context/screen-width'
 
 const poppins = Poppins({
   weight: ['100', '200', '400', '600', '900'],
@@ -30,8 +31,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" sizes="" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} bg-base`}>
-        <Header />
-        {children}
+        <ScreenWidthProvider>
+          <Header />
+          {children}
+        </ScreenWidthProvider>
       </body>
     </html>
   )
