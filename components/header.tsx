@@ -32,7 +32,7 @@ export function Header() {
           </Link>
           <a
             href={process.env.NEXT_PUBLIC_RESUME}
-            className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-sm uppercase text-white transition duration-300 hover:bg-zinc-800"
+            className="flex  cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-sm uppercase text-white transition duration-300 hover:bg-zinc-800"
           >
             <FaRegFilePdf size={18} />
             Currículo
