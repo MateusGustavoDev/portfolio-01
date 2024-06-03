@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 export function Skills() {
   return (
     <div className="relative z-50 w-full bg-zinc-900 py-20">
-      <div className="w-ful max-w-wrapper m-auto px-6">
+      <div className="w-ful m-auto max-w-[75rem] px-6">
         <motion.div
           variants={titleAnimation}
           initial="initial"

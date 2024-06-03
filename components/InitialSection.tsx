@@ -10,7 +10,7 @@ export function InitialSection() {
 
   return (
     <div className="m-auto w-full bg-zinc-900 py-20">
-      <div className="max-w-wrapper m-auto flex w-full flex-wrap justify-between px-6 max-x1:flex-col-reverse max-x1:items-center max-x1:gap-6">
+      <div className="m-auto flex w-full max-w-[75rem] flex-wrap justify-between px-6 max-x1:flex-col-reverse max-x1:items-center max-x1:gap-6">
         <div className="flex w-max flex-col gap-4 max-x1:m-auto max-x1:w-full ">
           <div className="flex flex-col gap-4 pr-6 max-x1:items-center max-x1:pr-0">
             <motion.p
@@ -33,7 +33,7 @@ export function InitialSection() {
               initial={{ y: 120, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6, ease: 'easeInOut' }}
-              className="max-w-[43.75rem] leading-8  text-gray-300 max-x1:text-center "
+              className="max-w-[43.75rem] leading-8 text-gray-300 max-x1:text-center "
             >
               Nasci em 2004, e meu interesse pela programação despertou em 2020.
               Então decidi embarcar em uma jornada autodidata focada no
@@ -57,8 +57,8 @@ export function InitialSection() {
           />
         </motion.div>
       </div>
-      <div className="max-w-wrapper m-auto w-full px-6 ">
-        <div className="mt-10 flex w-max max-w-[72.5rem]  gap-4 max-x1:m-auto max-x1:mt-12 max-sm:w-full max-sm:flex-col">
+      <div className="m-auto w-full max-w-[75rem] px-6 ">
+        <div className="mt-10 flex w-max max-w-[72.5rem] gap-4 max-x1:m-auto max-x1:mt-12 max-sm:w-full max-sm:flex-col">
           <Link href={process.env.NEXT_PUBLIC_LINKEDIN}>
             <motion.button
               initial={{ opacity: 0 }}

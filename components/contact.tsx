@@ -88,7 +88,7 @@ export function Contact() {
 
   return (
     <div id="contact" className="w-full">
-      <div className="max-w-wrapper m-auto  w-full px-6 py-20">
+      <div className="m-auto w-full  max-w-[75rem] px-6 py-20">
         <Toaster />
         <motion.div
           variants={titleAnimation}
