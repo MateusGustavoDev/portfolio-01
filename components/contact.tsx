@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import emailJs from '@emailjs/browser'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import SpinnerLoading from './spinner-loading'
 import { Button } from './ui/button'
 import { Toaster } from 'react-hot-toast'
@@ -59,11 +59,11 @@ export function Contact() {
   const textAnimation = {
     initial: {
       opacity: 0,
-      x: 300,
+      y: 300,
     },
     animate: (delay: number) => ({
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         delay: delay,
         duration: 0.6,
@@ -88,7 +88,7 @@ export function Contact() {
 
   return (
     <div id="contact" className="w-full">
-      <div className="m-auto w-full  max-w-[75rem] px-6 py-20">
+      <div className="m-auto w-full  max-w-[75rem] px-6 py-20 max-x1:py-14">
         <Toaster />
         <motion.div
           variants={titleAnimation}
@@ -201,43 +201,39 @@ export function Contact() {
             </form>
           </div>
 
-          <div className="flex flex-col gap-6 max-x1:m-auto max-x1:items-center max-md:gap-4 max-sm:m-0 max-sm:items-start">
-            <motion.div
-              variants={width < 990 ? textAnimationMobile : textAnimation}
-              initial="initial"
-              whileInView="animate"
-              custom={0.02}
-              viewport={{
-                once: true,
-              }}
-              className="flex flex-col gap-2 max-md:items-center"
-            >
-              <span className="flex items-center gap-3 text-xl  font-semibold text-white max-md:text-[1rem]">
+          {width && (
+            <div className="flex flex-col gap-6 max-x1:m-auto max-x1:items-center max-md:gap-4 max-sm:m-0 max-sm:items-start">
+              <motion.span
+                variants={width < 1091 ? textAnimationMobile : textAnimation}
+                initial="initial"
+                whileInView="animate"
+                custom={0.02}
+                viewport={{
+                  once: true,
+                }}
+                className="flex items-center gap-3 text-xl font-semibold  text-white max-md:items-center max-md:text-[1rem]"
+              >
                 <Mail size={24} />
                 {process.env.NEXT_PUBLIC_EMAIL}
-              </span>
-            </motion.div>
+              </motion.span>
 
-            <motion.div
-              variants={width < 990 ? textAnimationMobile : textAnimation}
-              initial="initial"
-              whileInView="animate"
-              custom={0.04}
-              viewport={{
-                once: true,
-              }}
-              className="flex flex-col gap-2 max-md:items-center"
-            >
-              <span className="flex items-center gap-3 text-xl  font-semibold text-white max-md:text-[1rem]">
+              <motion.span
+                variants={width < 1091 ? textAnimationMobile : textAnimation}
+                initial="initial"
+                whileInView="animate"
+                custom={0.04}
+                viewport={{
+                  once: true,
+                }}
+                className="flex items-center gap-3 text-xl font-semibold text-white max-md:items-center max-md:text-[1rem]"
+              >
                 <Phone size={24} />
                 {process.env.NEXT_PUBLIC_PHONE}
-              </span>
-            </motion.div>
-          </div>
+              </motion.span>
+            </div>
+          )}
         </div>
       </div>
     </div>
   )
 }
-
-//79 996557445

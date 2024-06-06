@@ -42,7 +42,10 @@ export default function Projects() {
 
   return (
     <div className="relative z-50 w-full">
-      <div id="projects" className="m-auto w-full max-w-[87.5rem] px-6 py-20">
+      <div
+        id="projects"
+        className="m-auto w-full max-w-[87.5rem] px-6 py-20 max-x1:py-14"
+      >
         <motion.div
           variants={titleAnimation}
           initial="initial"
@@ -55,33 +58,35 @@ export default function Projects() {
             <SectionText>Meus projetos</SectionText>
           </div>
         </motion.div>
-        <div className="grid grid-cols-2 gap-10 max-x1:flex max-x1:flex-wrap max-x1:justify-center">
-          {projects.map((project, index) => (
-            <motion.div
-              variants={
-                width < 1090
-                  ? projectsCardAnimationMobile
-                  : projectsCardAnimation
-              }
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              custom={index < 2 ? index : index - 2}
-              key={project.name}
-            >
-              <ProjectCard
-                name={project.name}
-                description={project.description}
-                image={project.image}
-                topics={project.topics}
-                url={project.url}
-                deploy={project.deploy}
-              />
-            </motion.div>
-          ))}
-        </div>
+        {width && (
+          <div className="grid grid-cols-2 gap-10 max-x1:flex max-x1:flex-wrap max-x1:justify-center">
+            {projects.map((project, index) => (
+              <motion.div
+                variants={
+                  width < 1090
+                    ? projectsCardAnimationMobile
+                    : projectsCardAnimation
+                }
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={index < 2 ? index : index - 2}
+                key={project.name}
+              >
+                <ProjectCard
+                  name={project.name}
+                  description={project.description}
+                  image={project.image}
+                  topics={project.topics}
+                  url={project.url}
+                  deploy={project.deploy}
+                />
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

@@ -10,11 +10,11 @@ export function MobileMenu() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button>
+        <Button className="p-0">
           <AlignJustify color="white" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex w-full max-w-[18.75rem] flex-col items-center justify-center gap-16 border-l-gray-800 bg-base">
+      <SheetContent className="flex w-full max-w-[18.75rem] flex-col items-center justify-center gap-16 border-l-zinc-800 bg-base">
         <SheetClose asChild>
           <Link
             to="contact"

@@ -9,7 +9,7 @@ export function InitialSection() {
   const width = useContext(ScreenWidthContext)
 
   return (
-    <div className="m-auto w-full bg-zinc-900 py-20">
+    <div className="m-auto w-full bg-zinc-900 py-20 max-x1:py-14">
       <div className="m-auto flex w-full max-w-[75rem] flex-wrap justify-between px-6 max-x1:flex-col-reverse max-x1:items-center max-x1:gap-6">
         <div className="flex w-max flex-col gap-4 max-x1:m-auto max-x1:w-full ">
           <div className="flex flex-col gap-4 pr-6 max-x1:items-center max-x1:pr-0">
@@ -44,18 +44,23 @@ export function InitialSection() {
             </motion.p>
           </div>
         </div>
-        <motion.div
-          initial={{ x: width < 580 ? 200 : 300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
-          className="relative h-[21.25rem] w-[18.75rem] overflow-hidden border-4 border-zinc-700 bg-slate-300"
-          style={{ borderRadius: '100% 63% 100% 82% / 57% 99% 49% 100%' }}
-        >
-          <div
-            style={{ backgroundImage: `url('/foto.jpeg')` }}
-            className="h-full w-full bg-cover"
-          />
-        </motion.div>
+        {width && (
+          <motion.div
+            initial={{
+              x: width < 1093 ? -200 : 300,
+              opacity: 0,
+            }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
+            className="relative h-[21.25rem] w-[18.75rem] overflow-hidden border-4 border-zinc-700 bg-slate-300"
+            style={{ borderRadius: '100% 63% 100% 82% / 57% 99% 49% 100%' }}
+          >
+            <div
+              style={{ backgroundImage: `url('/foto.jpeg')` }}
+              className="h-full w-full bg-cover"
+            />
+          </motion.div>
+        )}
       </div>
       <div className="m-auto w-full max-w-[75rem] px-6 ">
         <div className="mt-10 flex w-max max-w-[72.5rem] gap-4 max-x1:m-auto max-x1:mt-12 max-sm:w-full max-sm:flex-col">

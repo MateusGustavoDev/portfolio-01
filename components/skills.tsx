@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 export function Skills() {
   return (
-    <div className="relative z-50 w-full bg-zinc-900 py-20">
+    <div className="relative z-50 w-full bg-zinc-900 py-20 max-x1:py-14">
       <div className="w-ful m-auto max-w-[75rem] px-6">
         <motion.div
           variants={titleAnimation}
@@ -27,6 +27,7 @@ export function Skills() {
               key={skill.name}
               name={skill.name}
               logo={skill.logo}
+              description={skill.description}
               index={index}
             />
           ))}

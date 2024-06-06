@@ -44,7 +44,7 @@ export function ProjectCard({
       </motion.div>
       <div className="mt-4 flex flex-col gap-2 max-x1:mt-4">
         <div className="flex items-center justify-between">
-          <span className="max-x1:text:xl   text-2xl font-semibold text-white">
+          <span className="max-x1:text:xl text-2xl font-semibold text-white">
             {name}
           </span>
           <div className="flex items-center gap-4">
