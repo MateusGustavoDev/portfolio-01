@@ -4,6 +4,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ScreenWidthContext } from '@/context/screen-width'
+import Image from 'next/image'
 
 export function InitialSection() {
   const width = useContext(ScreenWidthContext)
@@ -52,12 +53,15 @@ export function InitialSection() {
             }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
-            className="relative h-[21.25rem] w-[18.75rem] overflow-hidden border-4 border-zinc-700 bg-slate-300"
+            className="relative h-[21.25rem] w-[18.75rem] overflow-hidden border-4 border-zinc-700 bg-zinc-800"
             style={{ borderRadius: '100% 63% 100% 82% / 57% 99% 49% 100%' }}
           >
-            <div
-              style={{ backgroundImage: `url('/foto.jpeg')` }}
-              className="h-full w-full bg-cover"
+            <Image
+              src="/foto.jpeg"
+              alt="Mateus Gustavo"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
             />
           </motion.div>
         )}
