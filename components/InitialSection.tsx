@@ -26,7 +26,7 @@ export function InitialSection() {
               initial={{ y: 120, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
-              className="bg-gradient-to-r from-[#33D2FF] via-blue-500 to-[#ff01a2] bg-clip-text text-7xl  font-semibold text-transparent max-x1:text-center"
+              className="font-semibold text-blue-500 max-x1:text-center"
             >
               Mateus Gustavo
             </motion.h1>
