@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" sizes="" />
       </head>
-      <body className={`${inter.variable} ${poppins.variable} bg-base`}>
+      <body className={`${inter.variable} ${poppins.variable}`}>
         <ScreenWidthProvider>
           <Header />
           {children}
