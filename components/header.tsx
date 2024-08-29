@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react'
 import { FaRegFilePdf } from 'react-icons/fa'
 import { GrPersonalComputer } from 'react-icons/gr'
 import Link from 'next/link'
-import { MobileMenu } from './mobile-menu'
+import { MobileMenu } from './mobile-menu';
 
 export function Header() {
   return (
