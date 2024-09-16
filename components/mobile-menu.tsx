@@ -1,10 +1,8 @@
 'use client'
-import { AlignJustify, Mail } from 'lucide-react'
+import { AlignJustify, FileText, Laptop, Mail } from 'lucide-react'
 import { Button } from './ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
 import { Link } from 'react-scroll'
-import { FaRegFilePdf } from 'react-icons/fa'
-import { GrPersonalComputer } from 'react-icons/gr'
 
 export function MobileMenu() {
   return (
@@ -14,14 +12,14 @@ export function MobileMenu() {
           <AlignJustify color="white" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex w-full max-w-[18.75rem] flex-col items-center justify-center gap-16 border-l-zinc-800 bg-base">
+      <SheetContent className="bg-base flex w-full max-w-[18.75rem] flex-col items-center justify-center gap-10 border-l-zinc-800 bg-background-02/20 backdrop-blur-md">
         <SheetClose asChild>
           <Link
             to="contact"
             smooth={true}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-base text-white hover:text-gray-400"
           >
-            <Mail size={22} />
+            <Mail size={20} />
             Contato
           </Link>
         </SheetClose>
@@ -29,18 +27,18 @@ export function MobileMenu() {
           <Link
             to="projects"
             smooth={true}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-base text-white hover:text-gray-400"
           >
-            <GrPersonalComputer size={22} />
+            <Laptop size={20} />
             Projetos
           </Link>
         </SheetClose>
         <SheetClose asChild>
           <a
             href={process.env.NEXT_PUBLIC_RESUME}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-base text-white hover:text-gray-400"
           >
-            <FaRegFilePdf color="white" size={22} />
+            <FileText size={20} />
             Currículo
           </a>
         </SheetClose>

@@ -1,19 +1,8 @@
 import type { Metadata } from 'next'
-import { Poppins, Inter } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
+import { Footer } from '@/components/footer'
 import './globals.css'
 import { Header } from '@/components/header'
-import { ScreenWidthProvider } from '@/context/screen-width'
-
-const poppins = Poppins({
-  weight: ['100', '200', '400', '600', '900'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
-})
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
 
 export const metadata: Metadata = {
   title: 'Mateus Gustavo',
@@ -27,14 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <link rel="icon" href="/favicon.png" sizes="" />
-      </head>
-      <body className={`${inter.variable} ${poppins.variable}`}>
-        <ScreenWidthProvider>
-          <Header />
-          {children}
-        </ScreenWidthProvider>
+      <body className={GeistSans.variable}>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   )

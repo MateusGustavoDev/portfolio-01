@@ -1,26 +1,22 @@
-'use client'
-import { InitialSection } from '@/components/InitialSection'
-import { Contact } from '@/components/contact'
-import { Footer } from '@/components/footer'
-import Projects from '@/components/projects'
+import { Contact } from '@/components/sections/contact'
+import { Projects } from '@/components/sections/projects'
 import { ScrollToTop } from '@/components/scroll-to-top'
-import { Skills } from '@/components/skills'
-import { Separator } from '@radix-ui/react-separator'
+import { Skills } from '@/components/sections/skills'
+import { Hello } from '@/components/sections/hello'
 
 export default function Home() {
   return (
-    <div>
-      <div className="m-auto min-h-screen w-full">
-        <InitialSection />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+    <div className="relative m-auto w-full">
+      <div className="relative h-full w-full overflow-auto">
+        <Hello />
+        <div className="h-[1px] bg-zinc-800" />
         <Projects />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+        <div className="h-[1px] bg-zinc-800" />
         <Skills />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+        <div className="h-[1px] bg-zinc-800" />
         <Contact />
+        <ScrollToTop />
       </div>
-      <Footer />
-      <ScrollToTop />
     </div>
   )
 }

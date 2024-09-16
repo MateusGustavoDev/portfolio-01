@@ -5,11 +5,11 @@ type SectionTextProps = ComponentProps<'h2'> & {
   children: ReactNode
 }
 
-export function SectionText({ children, className }: SectionTextProps) {
+export function SectionTitle({ children, className }: SectionTextProps) {
   return (
     <h2
       className={twMerge(
-        'mb-12 text-4xl font-semibold text-white max-md:mb-8',
+        'max-md:mb-8 mb-12 text-4xl font-bold uppercase text-white',
         className,
       )}
     >

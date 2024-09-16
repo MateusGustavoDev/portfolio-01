@@ -4,6 +4,5 @@ declare namespace NodeJS {
     NEXT_PUBLIC_GITHUB: string
     NEXT_PUBLIC_EMAIL: string
     NEXT_PUBLIC_RESUME: string
-    NEXT_PUBLIC_PHONE: number
   }
 }

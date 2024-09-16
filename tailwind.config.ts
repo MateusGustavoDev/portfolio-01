@@ -19,50 +19,16 @@ const config = {
     },
     extend: {
       colors: {
-        base: '#111111',
+        'background-01': '#0a0a0a',
+        'background-02': '#000',
       },
       fontFamily: {
-        inter: 'var(--font-inter)',
-        poppins: 'var(--font-poppins)',
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+        sans: ['var(--font-geist-sans)'],
       },
       screens: {
-        '2xl': { max: '1535px' },
-        // => @media (max-width: 1535px) { ... }
-
-        '1xl': { max: '1120px' },
-        // => @media (max-width: 1px)
-
-        xl: { max: '1279px' },
-        // => @media (max-width: 1279px) { ... }
-
-        'max-xs': { max: '444px' },
-
-        'max-x1': { max: '1090px' },
-
-        'max-x2': { max: '1120px' },
-
-        'max-lg': { max: '1023px' },
-        // => @media (max-width: 1023px) { ... }
-
-        'max-md': { max: '767px' },
-        // => @media (max-width: 767px) { ... }
-
-        'max-sm': { max: '639px' },
-        // => @media (max-width: 639px) { ... }
+        desktop: { max: '1024px' },
+        tablet: { max: '768px' },
+        mobile: { max: '500px' },
       },
       maxWidth: {
         wrapper: '75rem',
