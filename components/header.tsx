@@ -3,11 +3,11 @@ import { Mail } from 'lucide-react'
 import { FaRegFilePdf } from 'react-icons/fa'
 import { GrPersonalComputer } from 'react-icons/gr'
 import Link from 'next/link'
-import { MobileMenu } from './mobile-menu';
+import { MobileMenu } from './mobile-menu'
 
 export function Header() {
   return (
-    <header className="flex  w-full justify-center border-b border-zinc-800 bg-zinc-400 py-5 max-sm:py-4">
+    <header className="flex w-full justify-center border-b border-zinc-800 bg-zinc-400 py-5 max-sm:py-4">
       <div className="flex w-full max-w-[75rem] items-center justify-between px-6">
         <div className="flex items-center gap-3">
           <span className="text-2xl font-bold text-white">MateusDev</span>

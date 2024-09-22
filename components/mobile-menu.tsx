@@ -19,7 +19,7 @@ export function MobileMenu() {
           <Link
             to="contact"
             smooth={true}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-2xl text-white hover:text-gray-400"
           >
             <Mail size={22} />
             Contato
@@ -29,7 +29,7 @@ export function MobileMenu() {
           <Link
             to="projects"
             smooth={true}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-2xl text-white hover:text-gray-400"
           >
             <GrPersonalComputer size={22} />
             Projetos
@@ -38,7 +38,7 @@ export function MobileMenu() {
         <SheetClose asChild>
           <a
             href={process.env.NEXT_PUBLIC_RESUME}
-            className="flex cursor-pointer items-center gap-3  text-2xl text-white hover:text-gray-400"
+            className="flex cursor-pointer items-center gap-3 text-2xl text-white hover:text-gray-400"
           >
             <FaRegFilePdf color="white" size={22} />
             Currículo

@@ -43,7 +43,7 @@ export function SkillCard({ logo, name, description, index }: SkillCardProps) {
           <div className="relative h-11 w-11 max-md:h-6 max-md:w-6">
             <Image src={logo} fill alt={name} />
           </div>
-          <span className=" text-normal text-center font-medium text-white  max-md:block max-md:text-sm max-sm:bottom-10 max-sm:text-xs">
+          <span className="text-normal text-center font-medium text-white max-md:block max-md:text-sm max-sm:bottom-10 max-sm:text-xs">
             {name}
           </span>
         </motion.div>

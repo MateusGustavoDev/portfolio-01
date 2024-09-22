@@ -32,7 +32,7 @@ export function ProjectCard({
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 1 }}
         transition={{ type: 'just', stiffness: 300 }}
-        className="relative aspect-[550/348] h-full w-full  overflow-hidden rounded-md border border-zinc-800 hover:border-zinc-700 max-x1:max-w-[56.25rem]"
+        className="relative aspect-[550/348] h-full w-full overflow-hidden rounded-md border border-zinc-800 hover:border-zinc-700 max-x1:max-w-[56.25rem]"
       >
         {deploy ? (
           <Link href={deploy} target="_blank">
@@ -50,7 +50,7 @@ export function ProjectCard({
           <div className="flex items-center gap-4">
             {deploy ? (
               <Link
-                className="mr-2 rounded-md border border-zinc-800  px-4 py-2 text-sm text-white transition duration-300 ease-in-out hover:border-zinc-600 1xl:text-xs"
+                className="mr-2 rounded-md border border-zinc-800 px-4 py-2 text-sm text-white transition duration-300 ease-in-out hover:border-zinc-600 1xl:text-xs"
                 href={url}
               >
                 Código fonte
@@ -58,8 +58,8 @@ export function ProjectCard({
             ) : null}
           </div>
         </div>
-        <span className=" text-sm leading-7 text-gray-300">{description}</span>
-        <span className=" text-sm lowercase leading-7 text-blue-500">
+        <span className="text-sm leading-7 text-gray-300">{description}</span>
+        <span className="text-sm lowercase leading-7 text-blue-500">
           {concatenateWithDash(topics)}
         </span>
       </div>

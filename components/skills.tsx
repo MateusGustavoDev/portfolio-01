@@ -21,7 +21,7 @@ export function Skills() {
             Principais habilidades
           </SectionText>
         </motion.div>
-        <div className="flex w-full flex-wrap justify-center gap-7 max-x1:grid max-x1:grid-cols-2 max-x1:gap-4 max-md:gap-3 ">
+        <div className="flex w-full flex-wrap justify-center gap-7 max-x1:grid max-x1:grid-cols-2 max-x1:gap-4 max-md:gap-3">
           {skills.map((skill, index) => (
             <SkillCard
               key={skill.name}

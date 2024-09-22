@@ -12,11 +12,11 @@ export default function Home() {
     <div>
       <div className="m-auto min-h-screen w-full">
         <InitialSection />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+        <Separator className="h-[1px] bg-zinc-800" />
         <Projects />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+        <Separator className="h-[1px] bg-zinc-800" />
         <Skills />
-        <Separator className=" h-[1px] bg-zinc-800 " />
+        <Separator className="h-[1px] bg-zinc-800" />
         <Contact />
       </div>
       <Footer />

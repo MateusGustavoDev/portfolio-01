@@ -88,7 +88,7 @@ export function Contact() {
 
   return (
     <div id="contact" className="w-full">
-      <div className="m-auto w-full  max-w-[75rem] px-6 py-20 max-x1:py-14">
+      <div className="m-auto w-full max-w-[75rem] px-6 py-20 max-x1:py-14">
         <Toaster />
         <motion.div
           variants={titleAnimation}
@@ -102,7 +102,7 @@ export function Contact() {
             <SectionText>Contato</SectionText>
           </div>
         </motion.div>
-        <div className="flex gap-16  max-x1:flex-col">
+        <div className="flex gap-16 max-x1:flex-col">
           <div className="w-full max-w-[31.25rem] max-x1:m-auto">
             <form
               onSubmit={handleSubmit(sendEmail)}
@@ -119,12 +119,12 @@ export function Contact() {
               >
                 <div className="flex flex-col gap-3">
                   <input
-                    className="w-full rounded-md border  border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition  duration-300 ease-in-out hover:border-white focus:border-blue-500"
+                    className="w-full rounded-md border border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition duration-300 ease-in-out hover:border-white focus:border-blue-500"
                     placeholder="Seu nome"
                     {...register('name')}
                   />
                   {errors.name ? (
-                    <span className=" text-sm text-red-400">
+                    <span className="text-sm text-red-400">
                       {errors.name.message}
                     </span>
                   ) : null}
@@ -142,11 +142,11 @@ export function Contact() {
                 <div className="flex flex-col gap-3">
                   <input
                     placeholder="Seu email"
-                    className="w-full rounded-md border  border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition  duration-300 ease-in-out hover:border-white focus:border-blue-500"
+                    className="w-full rounded-md border border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition duration-300 ease-in-out hover:border-white focus:border-blue-500"
                     {...register('email')}
                   />
                   {errors.email ? (
-                    <span className=" text-sm text-red-400">
+                    <span className="text-sm text-red-400">
                       {errors.email.message}
                     </span>
                   ) : null}
@@ -164,11 +164,11 @@ export function Contact() {
                 <div className="flex flex-col gap-3">
                   <textarea
                     placeholder="Mensagem"
-                    className="h-[11.25rem] rounded-md border  border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition  duration-300 ease-in-out hover:border-white focus:border-blue-500"
+                    className="h-[11.25rem] rounded-md border border-zinc-500 bg-base px-4 py-4 text-gray-100 outline-none transition duration-300 ease-in-out hover:border-white focus:border-blue-500"
                     {...register('message')}
                   />
                   {errors.message ? (
-                    <span className=" text-sm text-red-400">
+                    <span className="text-sm text-red-400">
                       {errors.message.message}
                     </span>
                   ) : null}
@@ -186,7 +186,7 @@ export function Contact() {
               >
                 <Button
                   type="submit"
-                  className="w-full gap-4 rounded-md border  border-zinc-700 bg-zinc-900 py-7 font-semibold text-white transition  duration-300 ease-in-out hover:border-zinc-500"
+                  className="w-full gap-4 rounded-md border border-zinc-700 bg-zinc-900 py-7 font-semibold text-white transition duration-300 ease-in-out hover:border-zinc-500"
                 >
                   {isLoading ? (
                     <SpinnerLoading />
@@ -211,7 +211,7 @@ export function Contact() {
                 viewport={{
                   once: true,
                 }}
-                className="flex items-center gap-3 text-xl font-semibold  text-white max-md:items-center max-md:text-[1rem]"
+                className="flex items-center gap-3 text-xl font-semibold text-white max-md:items-center max-md:text-[1rem]"
               >
                 <Mail size={24} />
                 {process.env.NEXT_PUBLIC_EMAIL}
