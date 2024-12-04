@@ -3,6 +3,12 @@ import graphql from '@/public/skills/graphql.svg'
 
 export const projects = [
   {
+    name: 'Nextfy',
+    image: '/projects/nextfy.png',
+    url: '',
+    deploy: 'https://next-shopify-gamma.vercel.app/',
+  },
+  {
     name: 'Fsw Store',
     image: '/projects/fswstore.png',
     url: 'https://github.com/MateusGustavoDev/fsw-store-02',
